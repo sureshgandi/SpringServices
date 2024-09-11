@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ManagerServiceAPI
+  main:
+    allow-circular-references: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/manager
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update

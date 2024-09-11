@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: inventoryManagment
+amazon:
+  dynamodb:
+    endpoint: http://localhost:4566/
+    accesskey: 123
+    secretkey: xyz
+    region: us-east-1
+    isCreateTable: true

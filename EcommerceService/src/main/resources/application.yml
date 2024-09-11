@@ -1,0 +1,23 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  application:
+    name: EcommerceService
+  cloud:
+    discovery:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+  flyway:
+    locations=classpath: db/migration
+    schemas: merger
+  datasource:
+    url: jdbc:mysql://localhost:3306/tecomm
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
